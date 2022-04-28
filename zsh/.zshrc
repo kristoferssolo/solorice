@@ -93,7 +93,7 @@ function cd() {
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
     tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
+    lfrun -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp" >/dev/null
