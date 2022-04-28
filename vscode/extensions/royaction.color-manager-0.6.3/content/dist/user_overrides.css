@@ -1,0 +1,40 @@
+
+						
+							body{ 
+								max-width: 640px !important; 
+								margin: 0 0 0 auto !important;
+							} 
+							
+							body::before {
+								content: '';
+								position: fixed;
+								top: 0;
+								right: 640px;
+								height:100%;
+								border-left: 1px solid var(--vscode-editor-foreground);
+								z-index: 1000;
+							}
+							
+							@media (min-width: 641px) {
+								#controls-wrapper{ 
+									left: auto !important; 
+									right: 0 !important; 
+									max-width: 620px !important;
+									width: 100% !important;
+								}
+							}
+							
+							@media (max-width: 640px) {
+								#controls-wrapper{ 
+									left: 0 !important; 
+									right: 0 !important; 
+								}
+							}
+							
+							#statusbar{ 
+								left: auto !important; 
+								right: 0 !important; 
+								max-width: 640px !important;
+							} 
+
+						

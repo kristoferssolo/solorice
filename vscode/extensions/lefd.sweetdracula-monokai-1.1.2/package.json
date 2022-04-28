@@ -1,0 +1,45 @@
+{
+	"name": "sweetdracula-monokai",
+	"displayName": "Sweet Dracula Monokai",
+	"description": "Sweet Dracula + Monokai syntax highlighting",
+	"version": "1.1.2",
+	"publisher": "lefd",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LEFD/sweetdracula-monokai"
+	},
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"keywords": [
+		"dracula",
+		"dark",
+		"theme",
+		"color-theme",
+		"monokai"
+	],
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Sweet Dracula Monokai",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sweetdracula-monokai-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "ec34bb72-0f59-41c0-abbd-6991596db28e",
+		"publisherId": "f1b353b4-2306-4062-b53a-4b499c02a9c8",
+		"publisherDisplayName": null,
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1651167578734
+	}
+}
