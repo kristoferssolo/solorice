@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 		<Metadata>
-			<Identity Language="en-US" Id="js-debug-companion" Version="1.0.17" Publisher="ms-vscode" />
+			<Identity Language="en-US" Id="js-debug-companion" Version="1.0.18" Publisher="ms-vscode" />
 			<DisplayName>JavaScript Debugger Companion Extension</DisplayName>
 			<Description xml:space="preserve">Companion extension to js-debug that provides capability for remote debugging</Description>
 			<Tags>javascript</Tags>

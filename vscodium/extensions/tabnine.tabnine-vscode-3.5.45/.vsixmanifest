@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="tabnine-vscode" Version="3.5.42" Publisher="TabNine"/>
+    <Identity Language="en-US" Id="tabnine-vscode" Version="3.5.45" Publisher="TabNine"/>
     <DisplayName>Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby &amp; more</DisplayName>
     <Description xml:space="preserve">👩‍💻🤖 JavaScript, Python, Java, Typescript &amp; all other languages - AI Code completion plugin. Tabnine makes developers more productive by auto-completing their code.</Description>
     <Tags>javascript,python,typescript,php,autocomplete,ruby,java,go,golang,bash,kotlin,html,css,ocaml,perl,rust,julia,lua,haskell,c,cpp,c++,csharp,c#,react,swift,objective-c,objectivec,ai,method completion,intellicode,intellisense,snippets,kite,nodejs,node,node.js,jupyter,keybindings</Tags>

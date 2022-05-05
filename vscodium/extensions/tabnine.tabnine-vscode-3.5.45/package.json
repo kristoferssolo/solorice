@@ -1,7 +1,7 @@
 {
 	"publisher": "TabNine",
 	"name": "tabnine-vscode",
-	"version": "3.5.42",
+	"version": "3.5.45",
 	"displayName": "Tabnine AI",
 	"description": "👩‍💻🤖 JavaScript, Python, Java, Typescript & all other languages - AI Code completion plugin. Tabnine makes developers more productive by auto-completing their code.",
 	"icon": "small_logo.png",
@@ -118,6 +118,7 @@
 	"devDependencies": {
 		"@types/chai": "^4.2.14",
 		"@types/debounce": "^1.2.1",
+		"@types/diff": "^5.0.2",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.2.2",
 		"@types/mock-fs": "^4.13.0",
@@ -165,7 +166,9 @@
 	},
 	"dependencies": {
 		"await-semaphore": "^0.1.3",
+		"axios": "^0.21.0",
 		"debounce": "^1.2.1",
+		"diff": "^5.0.0",
 		"extract-zip": "^2.0.1",
 		"https-proxy-agent": "^5.0.0",
 		"semver": "^7.3.2",
@@ -230,6 +233,22 @@
 			{
 				"command": "Tabnine.saveSnippet",
 				"title": "⌬ Tabnine: Save Snippet"
+			},
+			{
+				"command": "Tabnine.hideSuggestion",
+				"title": "Hide",
+				"icon": {
+					"dark": "assets/close_inverse.svg",
+					"light": "assets/close.svg"
+				}
+			},
+			{
+				"command": "Tabnine.applySuggestion",
+				"title": "Apply",
+				"icon": {
+					"dark": "assets/approve_inverse.svg",
+					"light": "assets/approve.svg"
+				}
 			}
 		],
 		"menus": {
@@ -251,6 +270,18 @@
 				{
 					"command": "TabNine::assistantToggle",
 					"when": "tabnine-assistant:capability"
+				}
+			],
+			"comments/commentThread/title": [
+				{
+					"command": "Tabnine.hideSuggestion",
+					"group": "navigation",
+					"when": "commentController == tabnine.commentController"
+				},
+				{
+					"command": "Tabnine.applySuggestion",
+					"group": "navigation",
+					"when": "commentController == tabnine.commentController"
 				}
 			]
 		},
@@ -280,6 +311,10 @@
 					"tabnine.logFilePath": {
 						"type": "string",
 						"description": "Tabnine's log file (Visual Studio Code must be restarted for this setting to take effect)"
+					},
+					"tabnine.logLevel": {
+						"type": "string",
+						"description": "Tabnine's log level (Visual Studio Code must be restarted for this setting to take effect)"
 					},
 					"tabnine.receiveBetaChannelUpdates": {
 						"type": "boolean",
@@ -348,6 +383,6 @@
 		"updated": true,
 		"isPreReleaseVersion": false,
 		"preRelease": false,
-		"installedTimestamp": 1649320099209
+		"installedTimestamp": 1651570610158
 	}
 }
