@@ -428,6 +428,10 @@
 		"updated": true,
 		"isPreReleaseVersion": false,
 		"preRelease": false,
+<<<<<<< HEAD
 		"installedTimestamp": 1651501115341
+=======
+		"installedTimestamp": 1651406513766
+>>>>>>> 5b8e9b63bb70162a826e63eac9d3447ace3af0c9
 	}
 }
