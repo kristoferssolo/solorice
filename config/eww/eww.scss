@@ -80,18 +80,22 @@ clock_time {
 }
 
 .brightbar trough highlight {
-  background-image: linear-gradient(to right,
-      $rose 30%,
-      #f1bf99 50%,
-      $gold 100% * 50);
+  background-image: linear-gradient(
+    to right,
+    $rose 30%,
+    #f1bf99 50%,
+    $gold 100% * 50
+  );
   border-radius: 10px;
 }
 
 .volbar trough highlight {
-  background-image: linear-gradient(to right,
-      $foam 30%,
-      #67a2b4 50%,
-      $pine 100% * 50);
+  background-image: linear-gradient(
+    to right,
+    $foam 30%,
+    #67a2b4 50%,
+    $pine 100% * 50
+  );
   border-radius: 10px;
 }
 
@@ -123,6 +127,10 @@ clock_time {
 
   &__Charging {
     color: $gold;
+  }
+
+  &__low {
+    color: $love;
   }
 }
 
@@ -271,6 +279,10 @@ calendar:indeterminate {
 .sys_icon_mem {
   font-size: 30;
   margin: 30px;
+
+  &__low {
+    color: $love;
+  }
 }
 
 .sys_win {
@@ -361,10 +373,12 @@ calendar:indeterminate {
 
 .music_bar scale trough highlight {
   all: unset;
-  background-image: linear-gradient(to right,
-      $foam 30%,
-      #67a2b4 50%,
-      $pine 100% * 50);
+  background-image: linear-gradient(
+    to right,
+    $foam 30%,
+    #67a2b4 50%,
+    $pine 100% * 50
+  );
   border-radius: 24px;
 }
 
@@ -402,10 +416,12 @@ calendar:indeterminate {
 
 .speaker_bar scale trough highlight {
   all: unset;
-  background-image: linear-gradient(to right,
-      $foam 30%,
-      #67a2b4 50%,
-      $pine 100% * 50);
+  background-image: linear-gradient(
+    to right,
+    $foam 30%,
+    #67a2b4 50%,
+    $pine 100% * 50
+  );
   border-radius: 24px;
 }
 
@@ -438,10 +454,12 @@ calendar:indeterminate {
 
 .mic_bar scale trough highlight {
   all: unset;
-  background-image: linear-gradient(to right,
-      $foam 30%,
-      #67a2b4 50%,
-      $pine 100% * 50);
+  background-image: linear-gradient(
+    to right,
+    $foam 30%,
+    #67a2b4 50%,
+    $pine 100% * 50
+  );
   border-radius: 24px;
 }
 
