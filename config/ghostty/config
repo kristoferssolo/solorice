@@ -142,7 +142,7 @@ font-feature = "-calt, -liga, -dlig"
 # On Linux with GTK, font size is scaled according to both display-wide and
 # text-specific scaling factors, which are often managed by your desktop
 # environment (e.g. the GNOME display scale and large text settings).
-font-size = 12
+font-size = {{font_size}}
 
 # A repeatable configuration to set one or more font variations values for
 # a variable font. A variable font is a single font, usually with a filename
@@ -773,7 +773,7 @@ fullscreen = false
 # sequence will be honored but previous changes will not retroactively
 # be set. This latter case may require you to restart programs such as Neovim
 # to get the new title.
-title =
+title = "Ghostty"
 
 # The setting that will change the application class value.
 #
@@ -790,7 +790,7 @@ title =
 # The default is `com.mitchellh.ghostty`.
 #
 # This only affects GTK builds.
-class =
+class = "ghostty"
 
 # This controls the instance name field of the `WM_CLASS` X11 property when
 # running under X11. It has no effect otherwise.
@@ -986,16 +986,16 @@ working-directory =
 # Ghostty will attempt to request these permissions. If the permissions are
 # not granted, the keybind will not work. On macOS, you can find these
 # permissions in System Preferences -> Privacy & Security -> Accessibility.
-keybind = alt+eight=ignore
 keybind = alt+f4=ignore
-keybind = alt+five=ignore
-keybind = alt+four=ignore
-keybind = alt+nine=ignore
-keybind = alt+one=ignore
-keybind = alt+seven=ignore
-keybind = alt+six=ignore
-keybind = alt+three=ignore
-keybind = alt+two=ignore
+keybind = alt+one=unbind
+keybind = alt+two=unbind
+keybind = alt+three=unbind
+keybind = alt+four=unbind
+keybind = alt+five=unbind
+keybind = alt+six=unbind
+keybind = alt+seven=unbind
+keybind = alt+eight=unbind
+keybind = alt+nine=unbind
 keybind = ctrl+alt+down=ignore
 keybind = ctrl+alt+left=ignore
 keybind = ctrl+alt+right=ignore

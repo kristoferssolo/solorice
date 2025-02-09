@@ -129,6 +129,7 @@ depends = [ "zsh", "tmux" ]
 "config/alacritty/alacritty.toml" = {target = "~/.config/alacritty/alacritty.toml", type = "template"}
 "config/starship.toml" = "~/.config/starship/starship.toml"
 "config/ghostty/" = "~/.config/ghostty/"
+"config/ghostty/config" = {target = "~/.config/ghostty/config", type = "template"}
 
 [tmux.files]
 "config/tmux/" = "~/.config/tmux/"

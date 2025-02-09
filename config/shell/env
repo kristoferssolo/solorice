@@ -17,7 +17,6 @@ export LESSHISTFILE=-
 export $(dbus-launch)
 
 export LIBSEAT_BACKEND=logind
-# export XDG_RUNTIME_DIR="/run/user/$UID"
 
 unsetopt PROMPT_SP
 

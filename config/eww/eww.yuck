@@ -1,5 +1,5 @@
 ;; Variables
-(defpoll clock_hour :interval "5m" "date +%H")
+(defpoll clock_hour :interval "1m" "date +%H")
 (defpoll clock_minute :interval "2s" "date +%M")
 (defpoll clock_second :interval "1s" "date +%S")
 (defpoll clock_date :interval "10h" "date +%d.%m.%Y")
