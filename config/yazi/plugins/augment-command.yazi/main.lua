@@ -1,3 +1,4 @@
+--- @since 0.4.2
 -- Plugin to make some Yazi commands smarter
 -- Written in Lua 5.4
 
@@ -740,14 +741,30 @@ end
 ---@param args Arguments The arguments to pass to the plugin command
 ---@return nil
 local function emit_plugin_command(command, args)
-	return ya.manager_emit("plugin", {
-		PLUGIN_NAME,
-		args = string.format(
-			"%s %s",
-			command,
-			convert_arguments_to_string(args)
-		),
-	})
+	--
+
+	-- If the ya.confirm API exists, which means
+	-- the user is on the unstable version of Yazi,
+	-- use the new syntax to emit the plugin command
+	if ya.confirm then
+		return ya.manager_emit("plugin", {
+			PLUGIN_NAME,
+			string.format("%s %s", command, convert_arguments_to_string(args)),
+		})
+
+	-- TODO: Remove the following code when Yazi releases a stable version
+	-- Otherwise, the user is on the stable version,
+	-- so emit the plugin command using the old syntax
+	else
+		return ya.manager_emit("plugin", {
+			PLUGIN_NAME,
+			args = string.format(
+				"%s %s",
+				command,
+				convert_arguments_to_string(args)
+			),
+		})
+	end
 end
 
 -- Function to subscribe to the augmented-extract event
@@ -2859,7 +2876,8 @@ local function handle_create(args, config)
 		-- whether they want to overwrite the item
 		local user_confirmation = get_user_confirmation(
 
-			-- TODO: Remove the line below
+			-- TODO: Remove the line below when Yazi
+			-- releases a new stable version
 			"The item already exists, overwrite? (y/N)",
 			"Overwrite file?",
 			ui.Text({
