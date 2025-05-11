@@ -3087,6 +3087,9 @@ local function execute_create(item_url, is_directory, args, config)
 		if not successful then return show_error(error_message) end
 	end
 
+	-- Wait for a tiny bit for the file to be created
+	ya.sleep(0.1)
+
 	-- Reveal the created item
 	ya.mgr_emit("reveal", { tostring(item_url) })
 
@@ -4040,10 +4043,10 @@ local function handle_archive(args, config)
 	if not item_paths then return end
 
 	-- Get the path to the archive
-	local archive_path = get_user_input("Archive name:")
+	local archive_path = get_user_input("Archive name:") or ""
 
-	-- If the archive path isn't given, exit the function
-	if not archive_path then return end
+	-- If the archive path is empty, exit the function
+	if #string_trim(archive_path) < 1 then return end
 
 	-- Get the archiver
 	local archiver, get_archiver_results =
