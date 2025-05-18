@@ -32,7 +32,7 @@ depends = [ "base", "awesome_laptop", "picom", "dunst", "rofi" ]
 "config/x11/xresources" = {target = "~/.config/x11/xresources", type = "template"}
 
 [wayland]
-depends = [ "base", "hyprland", "dunst" ]
+depends = [ "base", "hyprland", "dunst", "rofi" ]
 
 [wayland.files]
 "config/zsh/.zprofile-wayland" = "~/.config/zsh/.zprofile"
@@ -59,7 +59,7 @@ depends = [ "shell" ]
 "config/rofi/config.rasi" = {target = "~/.config/rofi/config.rasi", type = "template"}
 
 [misc]
-depends = [ "torrent", "zathura" ]
+depends = [ "torrent", "zathura", "email" ]
 
 [misc.files]
 "config/batrc" = "~/.config/bat/config"
@@ -127,6 +127,9 @@ depends = [ "misc", "local", "eww", "lock" ]
 [spotify.files]
 "config/spotify-tui.yml" = "~/.config/spotify-tui/config.yml"
 
+[email.files]
+"config/neomutt/" = "~/.config/neomutt/"
+
 [terminal]
 depends = [ "zsh", "tmux" ]
 
@@ -139,6 +142,7 @@ depends = [ "zsh", "tmux" ]
 
 [tmux.files]
 "config/tmux/" = "~/.config/tmux/"
+"config/sesh/" = "~/.config/sesh/"
 
 [xplr.files]
 "config/xplr/" = "~/.config/xplr/"
