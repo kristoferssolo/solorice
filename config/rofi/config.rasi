@@ -34,7 +34,7 @@ configuration {
     // auto-select: false;
     // parse-hosts: false;
     // parse-known-hosts: true;
-    combi-modes: "window,drun,filebrowser,games";
+    combi-modes: "drun,games";
     matching: "fuzzy";
     // tokenize: true;
     // m: "-5";

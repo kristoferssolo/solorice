@@ -77,7 +77,7 @@ function cd {
     if [ $# -eq 0 ]; then
         new_directory=${HOME}
     fi
-    builtin cd "${new_directory}" && eza -a --icons --group-directories-first
+    z "${new_directory}" && eza -a --icons --group-directories-first
 }
 
 # Use lf to switch directories and bind it to ctrl-o
@@ -87,7 +87,7 @@ lfcd() {
     lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir" || return
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && z "$dir" || return
     fi
 }
 
@@ -95,7 +95,7 @@ function yazicd() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
     yazi "$@" --cwd-file="$tmp"
     if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd" && eza -a --icons --group-directories-first
+		z -- "$cwd" && eza -a --icons --group-directories-first
 	fi
 	rm -f -- "$tmp" >/dev/null 2>&1
 }

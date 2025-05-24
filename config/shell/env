@@ -16,6 +16,8 @@ export PATH=$JAVA_HOME/bin:$PATH
 export LESSHISTFILE=-
 export $(dbus-launch)
 
+export MANPAGER='nvim +Man!'
+
 export LIBSEAT_BACKEND=logind
 
 unsetopt PROMPT_SP

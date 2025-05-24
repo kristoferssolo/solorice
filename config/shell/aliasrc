@@ -34,8 +34,8 @@ alias \
     j="joshutoub" \
     lf="lfub" \
     lg="lazygit" \
-    lzd="lazydocker" \
     lock="swaylock" \
+    lzd="lazydocker" \
     night="redshift -PO 4500" \
     py="python" \
     sv="rsv" \
