@@ -30,38 +30,38 @@ hash = "fca231a128488a554823374f8f6d5241"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "4d82cd9e7534d976f000edf9c0f68d8f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "a54b96a"
+rev = "c0ad8a3"
 hash = "47865a70cade14a0b9b6bc6a54f16bdb"
 
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "fdcf373"
-hash = "bd1737dd44b202f412122e6a3b378d4c"
+rev = "de28f50"
+hash = "b9cd4027db110b4228889be32462f363"
 
 [[plugin.deps]]
 use = "macydnah/office"
@@ -70,8 +70,8 @@ hash = "35241f7d85abc5a0d2441020bc597ceb"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "70ed228"
-hash = "99a9bd21bc896710bbfce44f1ea00f74"
+rev = "c6d0de7"
+hash = "7b024fc14b462235068400207cbe7bf0"
 
 [[plugin.deps]]
 use = "iynaix/time-travel"
