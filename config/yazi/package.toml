@@ -10,8 +10,8 @@ hash = "23915860e59348bf4166778bb0e606f7"
 
 [[plugin.deps]]
 use = "hankertrix/augment-command"
-rev = "ac4a651"
-hash = "7b6b0b8c260c9c5e557287bf9b370f7c"
+rev = "9b15ea4"
+hash = "32cfc63cf0f802fc471f81868d93dbfe"
 
 [[plugin.deps]]
 use = "kirasok/torrent-preview"
@@ -20,8 +20,8 @@ hash = "6af40ce6b2cd849b5fa32de04a598b06"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "2496cd9"
-hash = "5b9dea47776a30946cfbf83232d18fb1"
+rev = "10b4627"
+hash = "3ec6a973d506665f1570a9fe08343fd8"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
@@ -30,38 +30,38 @@ hash = "fca231a128488a554823374f8f6d5241"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "4d82cd9e7534d976f000edf9c0f68d8f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "47865a70cade14a0b9b6bc6a54f16bdb"
 
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "de28f50"
-hash = "b9cd4027db110b4228889be32462f363"
+rev = "843c3fa"
+hash = "b4040931f0d2f9670ddb4923e55cd881"
 
 [[plugin.deps]]
 use = "macydnah/office"
@@ -80,8 +80,8 @@ hash = "69967963fba96295a07b68354fc91ea9"
 
 [[plugin.deps]]
 use = "imsi32/yatline"
-rev = "2ecf715"
-hash = "38e2ea4703ea606d4eef574e8e8b8fd7"
+rev = "4872af0"
+hash = "d32742ded0e73146a8ca590fdc4fb404"
 
 [[plugin.deps]]
 use = "kristoferssolo/vidir"
