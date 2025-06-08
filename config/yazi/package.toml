@@ -10,8 +10,8 @@ hash = "b67ee12053113983273e9118a7d1272b"
 
 [[plugin.deps]]
 use = "hankertrix/augment-command"
-rev = "9b15ea4"
-hash = "32cfc63cf0f802fc471f81868d93dbfe"
+rev = "a03a237"
+hash = "56dfc522998328d0c417226e88da862c"
 
 [[plugin.deps]]
 use = "kirasok/torrent-preview"
