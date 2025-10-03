@@ -71,8 +71,8 @@ depends = [ "shell" ]
 depends = [ "torrent", "zathura", "email" ]
 
 [misc.files]
-"config/batrc" = "~/.config/bat/config"
-"config/tmThemes/" = "~/.config/silicon/themes/"
+"config/bat/" = "~/.config/bat/"
+"config/silicon/" = "~/.config/silicon/"
 "config/btop/" = "~/.config/btop/"
 "config/htoprc" = "~/.config/htop/htoprc"
 "config/fastfetch/" = "~/.config/fastfetch/"

@@ -25,7 +25,7 @@ unsetopt PROMPT_SP
 # Default Apps
 export BROWSER="floorp"
 export EDITOR="nvim"
-export IMAGE="nsxiv"
+export IMAGE="oculante"
 export READER="zathura"
 export TERMINAL="{{terminal}}"
 export VIDEO="mpv"

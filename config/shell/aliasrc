@@ -11,6 +11,7 @@ alias \
     mkdir="mkdir -pv" \
     mv="mv -iv" \
     nsxiv="nsxiv -a" \
+    img="oculante" \
     rm="rm -vI" \
     wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts" \
     keychain="keychain --dir $XDG_RUNTIME_DIR/keychain"
