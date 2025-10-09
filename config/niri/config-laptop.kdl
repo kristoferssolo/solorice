@@ -300,7 +300,7 @@ spawn-at-startup "nextcloud"
 spawn-at-startup "xrdb" "~/.config/x11/xresources"
 spawn-at-startup "transmission-daemon"
 spawn-at-startup "{{browser}}"
-spawn-at-startup "kotatogram-desktop"
+spawn-at-startup "flatpak" "run" "com.ayugram.desktop"
 spawn-at-startup "vesktop"
 spawn-at-startup "swap-wallpaper"
 
