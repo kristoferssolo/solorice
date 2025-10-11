@@ -286,13 +286,10 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "pipewire"
 spawn-at-startup "pipewire-pulse"
 spawn-at-startup "wireplumber"
 spawn-at-startup "waybar"
-// spawn-at-startup "eww" "daemon"
-// spawn-at-startup "eww" "open bar"
 spawn-at-startup "mako"
 // spawn-at-startup "dbus-update-activation-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP" "DISPLAY" "XAUTHORITY"
 spawn-at-startup "nextcloud"
@@ -388,6 +385,7 @@ window-rule {
 
 window-rule {
     match at-startup=true app-id=r#"^org\.telegram\.desktop$"#
+    match at-startup=true app-id=r#"^com\.ayugram\.desktop$"#
     match at-startup=true app-id=r#"^org\.gnome\.Fractal$"#
     match at-startup=true app-id=r#"discord"#
     match at-startup=true app-id=r#"vesktop"#
