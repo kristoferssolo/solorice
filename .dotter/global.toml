@@ -13,7 +13,7 @@ LICENSE = ""
 default_target_type = "symbolic"
 
 [base]
-depends = [ "default", "zsh", "spotify", "terminal", "local", "misc", "dev", "apps" ]
+depends = [ "default", "zsh", "spotify", "terminal", "local", "misc", "dev", "apps", "gtk" ]
 
 [x11]
 depends = [ "base", "awesome", "picom", "dunst", "rofi" ]
@@ -182,3 +182,7 @@ depends = [ "zsh", "tmux", "fish" ]
 [apps.files]
 "config/Vencord/" = "~/.config/Vencord/"
 "config/obs-studio/" = "~/.config/obs-studio/"
+
+[gtk.files]
+"config/gtk-3.0/" = "~/.config/gtk-3.0/"
+"config/gtk-4.0/" = "~/.config/gtk-4.0/"
