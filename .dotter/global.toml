@@ -178,6 +178,8 @@ depends = [ "zsh", "tmux", "fish" ]
 [dev.files]
 "config/sqruff/" = "~/.config/sqruff/"
 "config/asm-lsp/" = "~/.config/asm-lsp/"
+"config/containers/" = "~/.config/containers/"
+
 
 [apps.files]
 "config/Vencord/" = "~/.config/Vencord/"
