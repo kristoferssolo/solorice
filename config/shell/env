@@ -35,6 +35,7 @@ export VIDEO="mpv"
 export VISUAL="$EDITOR"
 export WM="awesome"
 
+export GTK_THEME=rose-pine-gtk
 
 # $HOME Clean-up
 export XDG_CACHE_HOME="$HOME/.cache"

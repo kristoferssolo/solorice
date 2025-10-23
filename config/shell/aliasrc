@@ -21,7 +21,7 @@ alias \
     diff="diff --color=auto" \
     grep="rg --color=auto" \
     ip="ip -color=auto" \
-    less="moar" \
+    less="moor" \
     ls="eza -a --icons --group-directories-first"
 
 # These common commands ate just too long! Abbreviate them

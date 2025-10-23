@@ -3,13 +3,24 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
+workspace "6"
+workspace "7"
+workspace "8"
+workspace "9"
+
 environment {
     QT_QPA_PLATFORM "wayland"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
     XDG_SESSION_DESKTOP "niri"
     WM "niri"
-    DISPLAY ":0"
+    // DISPLAY ":0"
+    DISPLAY null
     ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
@@ -112,15 +123,15 @@ output "HDMI-A-1" {
     backdrop-color "#000"
 }
 
-workspace "browser" {
+workspace "1" {
     open-on-output "DP-1"
 }
 
-workspace "chat" {
+workspace "8" {
     open-on-output "HDMI-A-1"
 }
 
-workspace "music" {
+workspace "9" {
     open-on-output "HDMI-A-1"
 }
 
@@ -279,7 +290,6 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "pipewire"
 spawn-at-startup "pipewire-pulse"
 spawn-at-startup "wireplumber"
@@ -287,10 +297,10 @@ spawn-at-startup "mako"
 spawn-at-startup "waybar"
 // spawn-at-startup "dbus-update-activation-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP" "DISPLAY" "XAUTHORITY"
 spawn-at-startup "nextcloud"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+// spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "xrdb" "~/.config/x11/xresources"
 spawn-at-startup "transmission-daemon"
-spawn-at-startup "floorp"
+spawn-at-startup "{{browser}}"
 spawn-at-startup "kotatogram-desktop"
 spawn-at-startup "discord"
 spawn-at-startup "spotify-launcher"
