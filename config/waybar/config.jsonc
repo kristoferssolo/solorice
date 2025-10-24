@@ -50,8 +50,8 @@
     },
     "wlr/taskbar": {
         // "all-outputs": true,
-        // "format": "{icon} {title} {app_id}",
-        "format": "{icon}",
+        "format": "{app_id}",
+        // "format": "{icon}",
         "tooltip-format": "{title} | {app_id}",
         "on-click": "activate",
         "on-click-middle": "close",

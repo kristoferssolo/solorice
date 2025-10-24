@@ -395,6 +395,7 @@ window-rule {
     match at-startup=true app-id=r#"discord"#
     match at-startup=true app-id=r#"vesktop"#
 
+    exclude app-id=r#"^com\.ayugram\.desktop$"# title="^Media viewer$"
     exclude app-id=r#"^org\.telegram\.desktop$"# title="^Media viewer$"
     open-on-workspace "8"
     opacity 0.95
